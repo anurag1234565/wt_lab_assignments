@@ -1,0 +1,142 @@
+h1
+{
+	padding-left:  50px;
+	font-size: 50px;
+}
+.navbar
+{
+	padding-top: 50px;
+	padding-left: 50px;
+	background-color: gray;
+	height: 150px;
+	;
+}
+
+.navbar img
+{
+	height: 100px;
+	width:	100px;
+	
+}
+
+.navbar a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.navbar a:hover
+{
+		color: black;
+}
+.navbar ul
+{
+	
+	list-style-type: none;
+	float: right;
+}
+
+.navbar li
+{
+	font-size: 30px;
+	display: inline;
+	padding-bottom:2px;
+	
+}
+.refers
+{
+	margin-left: 30px;
+	margin-bottom:0;
+	background-color: red;
+	
+}
+
+.refers:hover
+{
+	background-color: green;
+	
+}
+
+.col
+{
+	float:left;
+	width:50%;
+
+}
+
+.col img
+{
+	width: 200px;
+	
+}
+.namedob
+{
+	display: inline-block;
+	float:right;
+	padding-right:20px; 
+	font-size: 30px;
+}
+
+#contactme
+{
+	text-align: center;
+	text-decoration: underline;
+	font-size: 30px;
+	font-weight:bold;
+}
+
+.input
+{
+	width: 70%;
+	height:50px;
+	margin-top: 1em;
+}
+
+.form
+{
+	margin-left: 5%;
+}
+
+label
+{
+	font-size: 20px;
+}
+
+textarea
+{
+	width: 60%;
+	margin-top: 12px;
+	margin-left: 3em;
+}
+
+.submit
+{
+	margin-top: 2em;
+	height:50px;
+	width:20%;
+	margin-left:30%;
+	background-color: lawngreen;
+	font-size: 20px;
+	border: none;
+}
+
+.footer
+{
+	background-color: grey;
+	color: white;
+	text-align: center;
+	width:100%;
+	float:left;
+	margin-top: 2em;
+	padding-top:20px;
+	padding-bottom:20px;
+	font-size: 20px;
+	
+}
+
+.hobbies
+{
+	padding-left: 10px;
+	background-color:yellow;
+	border: dotted;
+}
