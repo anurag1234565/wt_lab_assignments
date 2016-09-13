@@ -1,0 +1,190 @@
+body,html
+{
+	height:100%;
+	padding:0;
+	margin:0;
+}
+
+hr
+{
+	border:solid 1px black;
+}
+.header
+{
+	width:100%;
+	background-color: gray;
+	max-height:110px;
+	padding-top:1em;
+}
+
+.header img
+{
+	width:100%;
+	
+}
+
+.sidenav
+{
+	width:10%;
+	min-height:50em;
+	padding-top:2em;
+	
+}
+
+.sidenav img
+{
+	width:100%;
+	margin-top:3em;
+	border-top:solid;
+	border-bottom: solid;
+	border-top-color: aquamarine;
+	border-bottom-color: aquamarine;
+}
+
+.blogs
+{
+	float:left;
+	min-height:75%;
+	padding-left:2em;
+	padding-top:2em;
+	width:75%;
+	margin:auto;
+}
+
+.footer
+{
+	float:left;
+	width:100%;
+	background-color: gray;
+	min-height:10%;
+	padding-bottom: 1em;
+}
+
+.footer input
+{
+	margin-left:0.5em;
+	height:2em;
+	border: none;
+}
+
+
+.left
+{
+	float:left;
+	border-right-style: solid;
+}
+
+.right
+{
+	float:right;
+	border-left-style: solid
+}
+
+
+.center
+{
+	width:10%;
+	margin:auto;
+	padding-bottom:0px;
+}
+
+.left ul
+{
+	list-style: square;
+}
+
+li a
+{
+	text-decoration: none;
+	
+}
+
+.left li
+{
+	margin-top:1em;
+}
+
+.left h2
+{
+	text-align: center;
+	text-decoration: underline;
+}
+
+.search input
+{
+	width:90%;
+	height:2em;
+	margin-top:1em;
+	
+}
+
+.submit
+{
+
+	background-color: chartreuse;
+	border:none;
+}
+
+.blogs h1
+{
+	text-align: center;
+	font-size: 50px;
+	
+}
+
+.blog
+{
+	min-height:300px;
+}
+
+.contents
+{
+	float:left;
+	width:70%;
+}
+
+.images
+{
+	width:30%;
+	float: right;
+}
+
+.images img
+{
+	width:100%
+}
+
+
+
+.bleft
+{
+	float: left;
+	width:50%;
+}
+
+.bleft .submit
+{
+	float: right;
+	margin-right: 15em;
+}
+
+.bright
+{
+	float:right;
+	width:50%;
+	text-align: right;
+	
+}
+
+.bright ul
+{
+	margin-right: 5em;
+	
+}
+
+textarea
+{
+	margin-left: 2em;
+	border: none;
+	 
+}
