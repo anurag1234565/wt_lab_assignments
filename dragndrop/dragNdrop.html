@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drag And Drop</title>
+		
+		<script>
+			function allowDrop(event)
+			{
+				event.preventDefault();
+			}
+			
+			function drag(event)
+			{
+				event.dataTransfer.setData("text",event.target.id)
+			}
+			
+			function drop(event)
+			{
+				event.preventDefault()
+				var data = event.dataTransfer.getData("text");
+				event.target.appendChild(document.getElementById(data));
+			}
+		</script>
+	</head>
+	<body>
+		<div id="box" ondrop="drop(event)" ondragover="allowDrop(event)" style="border:1px solid black; width:200px; height:200px">Drop here</div>
+		
+		<img id="image" src="http://anuragregmi.com.np/images/anurag.jpg" draggable="true" ondragstart="drag(event)" style="width:200px;height:100px" alt="image"/>
+	</body>
+</html>
