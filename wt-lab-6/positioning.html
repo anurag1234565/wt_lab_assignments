@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Positioning</title>
+		<script type="text/javascript">
+			
+		</script>
+		<style type="text/css">
+			body{margin:0;padding:0;}
+			
+			.blueBox,.greenBox,.redBox
+			{
+				height: 300px;
+				width:300px;
+				position: absolute;
+			}
+			
+			.blueBox:hover,.greenBox:hover,.redBox:hover
+			{
+				z-index:4;
+				border-style: ridge;
+				border-color: black;
+				
+			}
+			
+			.blueBox
+			{
+				background-color: blue;
+				top:10%;
+				left:10%;
+				z-index: 3;
+			}
+			
+			.greenBox
+			{
+				background-color: forestgreen;
+				top:25%;
+				left:25%;
+				z-index: 2;
+			}
+			
+			.redBox
+			{
+				background-color: red;
+				top:40%;
+				left:40%;
+				z-index: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="blueBox">
+			&nbsp;
+		</div>
+		
+		<div class="greenBox">
+			&nbsp;
+		</div>
+		
+		<div class="redBox">
+			&nbsp;
+		</div>
+	</body>
+</html>

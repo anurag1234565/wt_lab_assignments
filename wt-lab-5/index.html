@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript Test</title>
+		<style>
+			.redbox
+			{
+				background-color: red;
+				height: 200px;
+				width: 200px;
+				position:absolute;
+				top:10%;
+				left:10%;
+			}
+		</style>
+		
+			
+		<script type="text/javascript">
+			function myFunction()
+			{
+				alert("Welcome To My Page");
+				var name = prompt("What is your name?");
+				var r = confirm("So your name is "+name+"?");
+				if(r == true)
+				{
+					alert("You Clicked Yes");
+				}
+				
+				else
+				{
+					alert("You clicked No");
+				}
+			}
+			
+			
+			function showHide()
+			{
+				var box = document.getElementById("box");
+				var btnshow = document.getElementById("btnshow");
+				
+				if(box.style.visibility=="hidden")
+				{
+					box.style.visibility="visible";
+					btnshow.innerHTML = "Hide";
+				}
+				else 
+				{
+					box.style.visibility="hidden";
+					btnshow.innerHTML = "Show";					
+					
+				}
+			}
+			
+			function move()
+			{
+				var box = document.getElementById("box");
+				if(box.style.left=="30%")
+				{
+					box.style.left="10%";	
+				}
+				else
+				{
+					box.style.left= "30%";	
+				}
+			}
+			
+			function red()
+			{
+				var box = document.getElementById("box");
+				box.style.backgroundColor = "red";
+			}
+			
+			function green()
+			{
+				var box = document.getElementById("box");
+				box.style.backgroundColor = "green";
+			}
+			
+			function blue()
+			{
+				var box = document.getElementById("box");
+				box.style.backgroundColor = "blue";
+			}
+		</script>
+		
+	</head>
+	<body onload="myFunction()">
+		<div class="redbox" id="box">
+			&nbsp;
+		</div>
+		<button onclick="showHide()" id="btnshow">Show</button>
+		<button onclick="move()">Move</button>
+		<button onclick="red()">Red</button>
+		<button onclick="green()">Green</button>
+		<button onclick="blue()">Blue</button>
+	
+	</body>
+</html>

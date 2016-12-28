@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Amount Calculator</title>
+		
+		<style type="text/css">
+			.wraper
+			{
+				position: absolute;
+				width:60%;
+				top:20%;
+				left:20%;
+				background-color: azure;
+			}
+			
+			table{width:100%;}
+			
+			input
+			{
+				border: groove black;
+			}
+		
+		</style>
+		
+		
+		<script type="text/javascript">
+			function check(el)
+			{
+				if((el.value == null) || (el.value =="") || isNaN(el.value))
+				{
+					el.style.border="solid red";
+					return false;
+				}
+				
+				else
+				{
+					el.style.border = "groove black"
+					return true;	
+				}
+					
+			}
+			
+			function calculate(el)
+			{
+				check(el);
+				
+				if(check(el) == true)
+				{
+						a= parseFloat(document.getElementById("qt").value);	
+						b= parseFloat(document.getElementById("pr").value);
+						c = a * b;
+						if (isNaN(c) == false)
+						{
+							document.getElementById("total").value = c;
+						}
+				}
+				
+			}
+		
+		</script>
+		
+	</head>
+	
+	<body>
+		<div class="wraper">
+			<table>
+				<tr>
+					<th>Quantity</th>
+					<th>Price</th>
+					<th>Total</th>
+				</tr>
+				
+				<tr>
+					<td><input type="text" id="qt" onKeyUp="calculate(this);" onblur="calculate(this);" /></td>
+					<td><input type="text" id="pr" onblur="calculate(this);" onKeyUp="calculate(this);"/></td>
+					<td><input type="text" id="total" readonly></td>
+				</tr>
+			</table>
+		</div>
+		
+	</body>
+</html>
