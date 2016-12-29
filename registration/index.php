@@ -1,7 +1,7 @@
 <?php
 	if(!empty($_POST))
 	{
-		$conn = new PDO("mysql:host=localhost;dbname=test","root","samsung") or die("Could not connect");
+		$conn = new PDO("mysql:host=localhost;dbname=test","user","password") or die("Could not connect");
 		$name = $_POST["fullname"];
 		$password = $_POST["password"];
 		$email = $_POST["email"];
